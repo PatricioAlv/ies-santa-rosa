@@ -279,20 +279,42 @@ Este proyecto es de carácter educativo. Los medios utilizados se encuentran baj
 
 ---
 
-## 🚀 Cómo Usar
+## 🚀 Deployment (Publicación)
+
+### GitHub Pages (Recomendado - GRATIS)
+
+La forma más fácil de publicar este sitio es usar GitHub Pages:
+
+1. **Creá un repositorio en GitHub**
+2. **Subí los archivos** con Git
+3. **Activá GitHub Pages** en Settings > Pages
+4. **Tu sitio estará en**: `https://TU-USUARIO.github.io/ies-santa-rosa/`
+
+📖 **Guía completa paso a paso**: Ver archivo [`DEPLOY.md`](DEPLOY.md)
+
+### Otras opciones gratuitas:
+- **Netlify**: Drag & drop desde el navegador
+- **Vercel**: Deploy automático desde GitHub
+- **Cloudflare Pages**: Con CDN global incluido
+
+---
+
+## 🔧 Cómo Usar Localmente
 
 1. Clonar o descargar el repositorio
 2. Abrir `index.html` en un navegador moderno
 3. Navegar por las diferentes secciones
 4. Reemplazar placeholders con contenido real
 
-### Para desarrollo local:
+### Para desarrollo local con servidor:
 ```bash
 # Usar un servidor local simple (opcional)
 python -m http.server 8000
 # o
 npx serve
 ```
+
+Luego abrí: `http://localhost:8000`
 
 ---
 
