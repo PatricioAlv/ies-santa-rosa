@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test de compatibilidad vocacional para el Profesorado en Educación Física - IES Santa Rosa">
+    
+    <title>Test Vocacional - IES Santa Rosa</title>
+    
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css?v=2">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo" aria-label="IES Santa Rosa - Inicio">
+                <img src="../assets/img/logo.png" alt="Logo IES Santa Rosa" class="header__logo-img" onerror="this.style.display='none'">
+                <span>IES Santa Rosa</span>
+            </a>
+            
+            <button class="header__toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <nav class="header__nav" aria-label="Navegación principal">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="header__nav header__nav--mobile" id="mobile-nav" aria-label="Navegación móvil">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <div class="container">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="../index.html" class="breadcrumbs__link">Inicio</a></li>
+                    <li class="breadcrumbs__item"><span class="breadcrumbs__current">Test Vocacional</span></li>
+                </ol>
+            </div>
+        </nav>
+        
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h1 class="section__title">✅ Test de Compatibilidad Vocacional</h1>
+                    <p class="section__subtitle">
+                        Descubrí si el Profesorado en Educación Física es la carrera indicada para vos
+                    </p>
+                </div>
+                
+                <!-- Explicación del test -->
+                <div class="card mb-lg">
+                    <div class="card__content">
+                        <h2 class="card__title">🎯 ¿Para qué sirve este test?</h2>
+                        <p class="card__text">
+                            Este test de compatibilidad vocacional fue diseñado para ayudarte a reflexionar sobre 
+                            tus intereses, habilidades y expectativas respecto al Profesorado de Educación Superior 
+                            en Educación Física. A través de 10 preguntas breves, evaluaremos tu afinidad con:
+                        </p>
+                        <ul style="margin-left: 1.5rem; color: var(--texto-claro); margin-bottom: var(--espaciado-sm);">
+                            <li>Tu vocación por la docencia y el trabajo con personas</li>
+                            <li>Tu interés en el deporte, la actividad física y la salud</li>
+                            <li>Tu disposición para el aprendizaje teórico-práctico</li>
+                            <li>Tu compromiso con valores como el trabajo en equipo y la inclusión</li>
+                            <li>Tus expectativas profesionales y laborales</li>
+                        </ul>
+                        <p class="card__text">
+                            <strong>⏱️ Duración:</strong> Aproximadamente 5 minutos<br>
+                            <strong>🔒 Privacidad:</strong> Este es un sitio estático. No almacenamos datos personales 
+                            en nuestros servidores. Las respuestas del formulario se procesan mediante Google Forms 
+                            con sus propias políticas de privacidad.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Google Forms Embed -->
+                <div class="mb-lg">
+                    <h2 class="mb-md">📋 Completá el Cuestionario</h2>
+                    <div class="embed-container" style="padding-bottom: 80%; max-height: 1200px;">
+                        <!-- TODO: Reemplazar con URL real de Google Forms -->
+                        <!-- Para crear el formulario:
+                             1. Ir a https://forms.google.com
+                             2. Crear nuevo formulario con 6-10 preguntas de opción múltiple
+                             3. Hacer clic en "Enviar" > Pestaña "<>" (Insertar HTML)
+                             4. Copiar el iframe y reemplazar el data-lazy-src abajo
+                             
+                             Ejemplo de estructura de preguntas:
+                             - ¿Te gusta practicar deportes regularmente?
+                             - ¿Disfrutás enseñar o compartir conocimientos con otros?
+                             - ¿Te interesa la anatomía y el funcionamiento del cuerpo humano?
+                             - ¿Te ves trabajando con niños, adolescentes o adultos?
+                             - ¿Valorás el trabajo en equipo?
+                             - ¿Te motiva promover hábitos saludables?
+                             - ¿Tenés paciencia para procesos de aprendizaje largos?
+                             - ¿Te interesa la investigación en ciencias del deporte?
+                             - ¿Te gustaría trabajar en escuelas, clubes o centros de salud?
+                             - ¿Estás dispuesto/a a seguir formándote continuamente?
+                        -->
+                        <iframe 
+                            data-lazy-src="https://docs.google.com/forms/d/e/PLACEHOLDER_FORM_ID/viewform?embedded=true"
+                            title="Test de Compatibilidad Vocacional - Profesorado en Educación Física"
+                            loading="lazy"
+                            style="border: none; width: 100%; height: 100%;">
+                            Cargando formulario...
+                        </iframe>
+                    </div>
+                    
+                    <div class="text-center mt-md">
+                        <p style="color: var(--texto-claro); margin-bottom: var(--espaciado-sm);">
+                            ¿Preferís completar el test en pantalla completa?
+                        </p>
+                        <a href="https://docs.google.com/forms/d/e/PLACEHOLDER_FORM_ID/viewform" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn btn--outline">
+                            🔗 Abrir en Nueva Pestaña
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Botón simulación de completado -->
+                <div class="text-center mb-lg">
+                    <button id="test-complete-btn" class="btn btn--secondary btn--large">
+                        ✓ He Completado el Test
+                    </button>
+                </div>
+                
+                <!-- Panel de resultados (oculto inicialmente) -->
+                <div id="test-result-panel" 
+                     class="card" 
+                     style="display: none; background: linear-gradient(135deg, var(--color-secundario) 0%, var(--blanco) 100%);"
+                     aria-hidden="true">
+                    <div class="card__content">
+                        <h2 class="card__title" style="color: var(--acento); font-size: 2rem;">🎉 ¡Resultado de tu Test!</h2>
+                        
+                        <div style="text-align: center; margin: var(--espaciado-lg) 0;">
+                            <p style="font-size: 1.125rem; color: var(--texto-oscuro); margin-bottom: var(--espaciado-xs);">
+                                Tu afinidad con la carrera es de:
+                            </p>
+                            <p class="test-result__affinity" 
+                               style="font-size: 4rem; font-weight: 700; color: var(--color-primario); line-height: 1; margin: var(--espaciado-sm) 0;">
+                                85%
+                            </p>
+                        </div>
+                        
+                        <div style="background-color: var(--blanco); padding: var(--espaciado-md); border-radius: var(--radio-md); margin-bottom: var(--espaciado-lg);">
+                            <h3 style="color: var(--color-primario); margin-bottom: var(--espaciado-sm);">💡 Nuestra Recomendación</h3>
+                            <p class="test-result__recommendation" style="color: var(--texto-claro); font-size: 1.125rem; line-height: 1.6;">
+                                ¡Excelente! Tenés un gran perfil para la Educación Física. Te esperamos en el IES Santa Rosa.
+                            </p>
+                        </div>
+                        
+                        <div style="display: grid; gap: var(--espaciado-sm); grid-template-columns: 1fr;">
+                            <a href="carrera.html" class="btn btn--primary">
+                                📖 Ver Detalles de la Carrera
+                            </a>
+                            <a href="contacto.html" class="btn btn--secondary">
+                                📞 Consultar por Inscripción
+                            </a>
+                            <a href="institucional.html" class="btn btn--outline">
+                                🏛️ Conocer el IES Santa Rosa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Información adicional -->
+                <div class="section mt-xl">
+                    <div class="section__header">
+                        <h2 class="section__title">❓ Preguntas Frecuentes sobre el Test</h2>
+                    </div>
+                    
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <button class="accordion__header" aria-expanded="false" aria-controls="faq-1">
+                                <span>¿El resultado del test determina si puedo inscribirme?</span>
+                                <span class="accordion__icon" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="accordion__content" id="faq-1">
+                                <div class="accordion__body">
+                                    <p>
+                                        No. Este test es orientativo y tiene fines informativos. Todos los interesados 
+                                        que cumplan con los requisitos académicos pueden inscribirse. El test solo te 
+                                        ayuda a reflexionar sobre tu vocación y afinidad con la carrera.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion__item">
+                            <button class="accordion__header" aria-expanded="false" aria-controls="faq-2">
+                                <span>¿Qué pasa con mis datos personales?</span>
+                                <span class="accordion__icon" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="accordion__content" id="faq-2">
+                                <div class="accordion__body">
+                                    <p>
+                                        Este sitio es estático y no almacena información. Si completás el formulario 
+                                        de Google Forms, tus respuestas se procesan según las 
+                                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+                                            políticas de privacidad de Google
+                                        </a>. Podés completar el test de forma anónima si lo preferís.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion__item">
+                            <button class="accordion__header" aria-expanded="false" aria-controls="faq-3">
+                                <span>¿Puedo repetir el test?</span>
+                                <span class="accordion__icon" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="accordion__content" id="faq-3">
+                                <div class="accordion__body">
+                                    <p>
+                                        Sí, podés completar el test cuantas veces quieras. Te recomendamos responder 
+                                        con sinceridad en base a tus verdaderos intereses y no en lo que creés que 
+                                        "deberías" responder.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion__item">
+                            <button class="accordion__header" aria-expanded="false" aria-controls="faq-4">
+                                <span>¿Qué hago después de completar el test?</span>
+                                <span class="accordion__icon" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="accordion__content" id="faq-4">
+                                <div class="accordion__body">
+                                    <p>
+                                        Te sugerimos explorar la sección de <a href="carrera.html">Carrera</a> para 
+                                        conocer el plan de estudios, la salida laboral y ver testimonios. También 
+                                        podés <a href="contacto.html">contactarnos</a> para resolver dudas específicas 
+                                        o visitar el IES en persona.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Otros recursos -->
+                <div class="section section--alt mt-xl">
+                    <div class="section__header">
+                        <h2 class="section__title">🧭 Recursos Complementarios</h2>
+                        <p class="section__subtitle">
+                            Explorá más contenido para tomar una decisión informada
+                        </p>
+                    </div>
+                    
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📊 Presentación Interactiva</h3>
+                                <p class="card__text">
+                                    Navegá por una presentación multimedia con toda la información 
+                                    sobre el profesorado y el IES Santa Rosa.
+                                </p>
+                                <a href="presentacion.html" class="btn btn--primary card__link">
+                                    Ver Presentación
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">🎓 Testimonios de Estudiantes</h3>
+                                <p class="card__text">
+                                    Escuchá las experiencias de quienes ya están estudiando o 
+                                    se graduaron del profesorado.
+                                </p>
+                                <a href="carrera.html#testimonios" class="btn btn--primary card__link">
+                                    Ver Testimonios
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📞 Asesoramiento Personalizado</h3>
+                                <p class="card__text">
+                                    Comunicate con nuestro equipo de orientación vocacional para 
+                                    una consulta personalizada.
+                                </p>
+                                <a href="contacto.html" class="btn btn--primary card__link">
+                                    Contactar
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>IES Santa Rosa</h3>
+                    <p>Instituto de Educación Superior especializado en la formación de docentes en Educación Física.</p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Contacto</h3>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><span>📞</span> <a href="tel:+543624XXXXXX">+54 362 4-XXXXXX</a></li>
+                        <li class="footer__contact-item"><span>✉️</span> <a href="mailto:info@iessantarosa.edu.ar">info@iessantarosa.edu.ar</a></li>
+                        <li class="footer__contact-item"><span>📍</span> La Leonesa, Chaco</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Enlaces</h3>
+                    <ul class="footer__links-list">
+                        <li><a href="carrera.html">Carrera</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                        <li><a href="creditos.html">Créditos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Seguinos</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/iessantarosa" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/iessantarosa" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 IES Santa Rosa - <a href="creditos.html">Créditos</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <button class="back-to-top" aria-label="Volver arriba">↑</button>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

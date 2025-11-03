@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ubicación del IES Santa Rosa - La Leonesa, Chaco. Mapa georreferenciado y extensiones áulicas.">
+    
+    <title>Ubicación - IES Santa Rosa</title>
+    
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css?v=2">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo" aria-label="IES Santa Rosa - Inicio">
+                <img src="../assets/img/logo.png" alt="Logo IES Santa Rosa" class="header__logo-img" onerror="this.style.display='none'">
+                <span>IES Santa Rosa</span>
+            </a>
+            
+            <button class="header__toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <nav class="header__nav" aria-label="Navegación principal">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="header__nav header__nav--mobile" id="mobile-nav" aria-label="Navegación móvil">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <div class="container">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="../index.html" class="breadcrumbs__link">Inicio</a></li>
+                    <li class="breadcrumbs__item"><span class="breadcrumbs__current">Ubicación</span></li>
+                </ol>
+            </div>
+        </nav>
+        
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h1 class="section__title">¿Dónde Estamos?</h1>
+                    <p class="section__subtitle">
+                        Nuestra sede principal en La Leonesa, Chaco, y extensiones áulicas en la región
+                    </p>
+                </div>
+                
+                <!-- Mapa Principal -->
+                <div class="mb-lg">
+                    <h2 id="sede-central">📍 Sede Central - La Leonesa, Chaco</h2>
+                    <div class="embed-container mt-md">
+                        <!-- TODO: Reemplazar con coordenadas reales de la sede -->
+                        <!-- Coordenadas aproximadas de La Leonesa: -27.0397, -58.7031 -->
+                        <!-- Para personalizar el mapa:
+                             1. Ir a Google Maps (https://www.google.com/maps)
+                             2. Buscar la dirección exacta del IES Santa Rosa
+                             3. Hacer clic en "Compartir" > "Insertar un mapa"
+                             4. Copiar el código iframe y reemplazar abajo
+                        -->
+                        <iframe 
+                            data-lazy-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14126.234567890123!2d-58.7031!3d-27.0397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDAyJzIzLjAiUyA1OMKwNDInMTEuMiJX!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar"
+                            title="Ubicación del IES Santa Rosa - Sede Central La Leonesa"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            style="border: none;">
+                        </iframe>
+                    </div>
+                    
+                    <div class="card mt-md">
+                        <div class="card__content">
+                            <h3 class="card__title">📋 Información de la Sede</h3>
+                            <p class="card__text">
+                                <strong>Dirección:</strong> Av. Principal 123, La Leonesa, Chaco (3650)<br>
+                                <strong>Teléfono:</strong> <a href="tel:+543624XXXXXX">+54 362 4-XXXXXX</a><br>
+                                <strong>Email:</strong> <a href="mailto:info@iessantarosa.edu.ar">info@iessantarosa.edu.ar</a><br>
+                                <strong>Horario de atención:</strong> Lunes a viernes de 8:00 a 20:00 hs
+                            </p>
+                            <div class="mt-md">
+                                <a href="https://www.google.com/maps/search/?api=1&query=-27.0397,-58.7031" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--primary">
+                                    🗺️ Cómo Llegar (Google Maps)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Extensiones Áulicas -->
+                <div class="mt-xl" id="extensiones">
+                    <h2>🏫 Extensiones Áulicas</h2>
+                    <p class="section__subtitle mb-md">
+                        El IES Santa Rosa cuenta con sedes en diferentes localidades de la región para 
+                        facilitar el acceso a la educación superior
+                    </p>
+                    
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📍 Extensión Resistencia</h3>
+                                <p class="card__text">
+                                    <strong>Dirección:</strong> Av. 25 de Mayo 456, Resistencia<br>
+                                    <strong>Teléfono:</strong> +54 362 4-YYYYYY<br>
+                                    <strong>Horario:</strong> Lunes a viernes 18:00 a 22:00 hs
+                                </p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Resistencia,Chaco" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--outline btn--small card__link">
+                                    Ver en Mapa
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📍 Extensión Corrientes</h3>
+                                <p class="card__text">
+                                    <strong>Dirección:</strong> San Martín 789, Corrientes Capital<br>
+                                    <strong>Teléfono:</strong> +54 379 4-ZZZZZZ<br>
+                                    <strong>Horario:</strong> Lunes a viernes 18:00 a 22:00 hs
+                                </p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Corrientes,Argentina" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--outline btn--small card__link">
+                                    Ver en Mapa
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📍 Extensión Formosa</h3>
+                                <p class="card__text">
+                                    <strong>Dirección:</strong> Av. 9 de Julio 321, Formosa<br>
+                                    <strong>Teléfono:</strong> +54 370 4-WWWWWW<br>
+                                    <strong>Horario:</strong> Lunes a viernes 18:00 a 22:00 hs
+                                </p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Formosa,Argentina" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--outline btn--small card__link">
+                                    Ver en Mapa
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Leyenda y Accesos Rápidos -->
+                <div class="section section--alt mt-xl">
+                    <div class="section__header">
+                        <h2 class="section__title">🧭 Navegación Rápida</h2>
+                        <p class="section__subtitle">Accesos directos a otras secciones importantes</p>
+                    </div>
+                    
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📖 Conocé la Carrera</h3>
+                                <p class="card__text">
+                                    Explorá el plan de estudios, las materias y las oportunidades laborales 
+                                    del Profesorado en Educación Física.
+                                </p>
+                                <a href="carrera.html" class="btn btn--primary card__link">
+                                    Ver Carrera
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📝 Proceso de Inscripción</h3>
+                                <p class="card__text">
+                                    ¿Querés inscribirte? Conocé los requisitos, fechas y pasos para formar 
+                                    parte del IES Santa Rosa.
+                                </p>
+                                <a href="carrera.html#inscripcion" class="btn btn--primary card__link">
+                                    Ver Requisitos
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📞 Contacto Directo</h3>
+                                <p class="card__text">
+                                    ¿Tenés dudas sobre la ubicación o cómo llegar? Comunicate con nosotros 
+                                    para recibir ayuda personalizada.
+                                </p>
+                                <a href="contacto.html" class="btn btn--primary card__link">
+                                    Contactar
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Facilidades -->
+                <div class="mt-xl">
+                    <h2>🏢 Nuestras Instalaciones</h2>
+                    <div class="cards-grid mt-md">
+                        <div class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">🏃 Gimnasio Polideportivo</h3>
+                                <p class="card__text">
+                                    Espacio amplio y equipado para prácticas deportivas, con canchas 
+                                    multiuso, vestuarios y gradas.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">🔬 Laboratorio de Anatomía</h3>
+                                <p class="card__text">
+                                    Equipamiento moderno para el estudio del cuerpo humano, anatomía 
+                                    y fisiología del ejercicio.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">📚 Biblioteca Especializada</h3>
+                                <p class="card__text">
+                                    Amplio acervo bibliográfico en educación física, deportes, 
+                                    pedagogía y salud.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">💻 Sala de Informática</h3>
+                                <p class="card__text">
+                                    Computadoras con acceso a internet y software especializado 
+                                    para investigación y trabajos.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">🏊 Pileta Olímpica</h3>
+                                <p class="card__text">
+                                    Pileta reglamentaria para natación y deportes acuáticos, con 
+                                    sistema de calefacción.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">⚽ Campos Deportivos</h3>
+                                <p class="card__text">
+                                    Canchas de fútbol, hockey y atletismo al aire libre para 
+                                    prácticas deportivas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>IES Santa Rosa</h3>
+                    <p>Instituto de Educación Superior especializado en la formación de docentes en Educación Física.</p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Contacto</h3>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><span>📞</span> <a href="tel:+543624XXXXXX">+54 362 4-XXXXXX</a></li>
+                        <li class="footer__contact-item"><span>✉️</span> <a href="mailto:info@iessantarosa.edu.ar">info@iessantarosa.edu.ar</a></li>
+                        <li class="footer__contact-item"><span>📍</span> La Leonesa, Chaco</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Enlaces</h3>
+                    <ul class="footer__links-list">
+                        <li><a href="carrera.html">Carrera</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Seguinos</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/iessantarosa" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/iessantarosa" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 IES Santa Rosa - <a href="creditos.html">Créditos</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <button class="back-to-top" aria-label="Volver arriba">↑</button>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

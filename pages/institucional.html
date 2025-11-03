@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia institucional del IES Santa Rosa - 30 años formando docentes en Educación Física en La Leonesa, Chaco">
+    
+    <title>Historia Institucional - IES Santa Rosa</title>
+    
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css?v=2">
+    <style>
+        /* Estilos específicos para línea de tiempo */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--espaciado-lg) 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--color-primario), var(--acento));
+        }
+        
+        .timeline__item {
+            position: relative;
+            margin-bottom: var(--espaciado-xl);
+            width: calc(50% - 30px);
+        }
+        
+        .timeline__item:nth-child(odd) {
+            margin-left: 0;
+            margin-right: auto;
+            padding-right: 30px;
+            text-align: right;
+        }
+        
+        .timeline__item:nth-child(even) {
+            margin-left: auto;
+            margin-right: 0;
+            padding-left: 30px;
+            text-align: left;
+        }
+        
+        .timeline__marker {
+            position: absolute;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: var(--acento);
+            border: 4px solid var(--blanco);
+            border-radius: 50%;
+            box-shadow: var(--sombra-md);
+            z-index: 1;
+        }
+        
+        .timeline__item:nth-child(odd) .timeline__marker {
+            right: -10px;
+        }
+        
+        .timeline__item:nth-child(even) .timeline__marker {
+            left: -10px;
+        }
+        
+        .timeline__content {
+            background-color: var(--blanco);
+            padding: var(--espaciado-md);
+            border-radius: var(--radio-md);
+            box-shadow: var(--sombra-sm);
+            transition: all var(--transicion);
+        }
+        
+        .timeline__content:hover {
+            box-shadow: var(--sombra-lg);
+            transform: translateY(-4px);
+        }
+        
+        .timeline__year {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primario);
+            margin-bottom: var(--espaciado-xs);
+        }
+        
+        .timeline__title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--texto-oscuro);
+            margin-bottom: var(--espaciado-xs);
+        }
+        
+        .timeline__description {
+            color: var(--texto-claro);
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline__item,
+            .timeline__item:nth-child(odd),
+            .timeline__item:nth-child(even) {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 0;
+                text-align: left;
+            }
+            
+            .timeline__marker,
+            .timeline__item:nth-child(odd) .timeline__marker,
+            .timeline__item:nth-child(even) .timeline__marker {
+                left: 10px;
+                right: auto;
+            }
+        }
+        
+        /* Tooltips enriquecidos */
+        .tooltip {
+            position: relative;
+            display: inline;
+            border-bottom: 2px dotted var(--color-primario);
+            cursor: help;
+            color: var(--color-primario);
+            font-weight: 600;
+        }
+        
+        .tooltip__content {
+            visibility: hidden;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--texto-oscuro);
+            color: var(--blanco);
+            padding: var(--espaciado-sm);
+            border-radius: var(--radio-sm);
+            width: 250px;
+            font-size: 0.875rem;
+            font-weight: normal;
+            z-index: 100;
+            box-shadow: var(--sombra-lg);
+            opacity: 0;
+            transition: all var(--transicion);
+        }
+        
+        .tooltip__content::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 8px solid transparent;
+            border-top-color: var(--texto-oscuro);
+        }
+        
+        .tooltip:hover .tooltip__content,
+        .tooltip:focus .tooltip__content {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo" aria-label="IES Santa Rosa - Inicio">
+                <img src="../assets/img/logo.png" alt="Logo IES Santa Rosa" class="header__logo-img" onerror="this.style.display='none'">
+                <span>IES Santa Rosa</span>
+            </a>
+            
+            <button class="header__toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <nav class="header__nav" aria-label="Navegación principal">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="header__nav header__nav--mobile" id="mobile-nav" aria-label="Navegación móvil">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <div class="container">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="../index.html" class="breadcrumbs__link">Inicio</a></li>
+                    <li class="breadcrumbs__item"><span class="breadcrumbs__current">Institucional</span></li>
+                </ol>
+            </div>
+        </nav>
+        
+        <section class="hero" style="min-height: 50vh;">
+            <div class="hero__content">
+                <h1 class="hero__title">Nuestra Historia</h1>
+                <p class="hero__subtitle">30 años formando docentes del movimiento y la salud</p>
+            </div>
+        </section>
+        
+        <!-- Reseña histórica con hipertexto -->
+        <section class="section" id="resena">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">🏛️ Reseña Institucional</h2>
+                    <p class="section__subtitle">Un legado de compromiso con la educación física y el deporte</p>
+                </div>
+                
+                <article class="card mb-lg">
+                    <div class="card__content">
+                        <h3 class="card__title" id="origenes">Los Orígenes (1990-1995)</h3>
+                        <p class="card__text">
+                            El <strong>Instituto de Educación Superior Santa Rosa</strong> nació en 
+                            <span class="tooltip" tabindex="0">
+                                1990
+                                <span class="tooltip__content" role="tooltip">
+                                    La fundación del IES coincidió con la reforma educativa argentina 
+                                    que jerarquizó la formación docente en educación física.
+                                </span>
+                            </span>
+                            en <a href="mapa.html">La Leonesa, Chaco</a>, como respuesta a una necesidad 
+                            urgente de la región: formar 
+                            <span class="tooltip" tabindex="0">
+                                profesores especializados en Educación Física
+                                <span class="tooltip__content" role="tooltip">
+                                    Antes de 1990, los docentes debían trasladarse a Resistencia o Corrientes 
+                                    para acceder a formación superior en Educación Física.
+                                </span>
+                            </span>
+                            que pudieran atender la creciente demanda de las escuelas primarias y secundarias. 
+                            Fundado por un grupo de <a href="#fundadores">educadores visionarios</a>, el instituto 
+                            comenzó con apenas 35 estudiantes y tres profesores, funcionando en aulas prestadas del 
+                            colegio secundario local.
+                        </p>
+                        <p class="card__text">
+                            Los primeros años fueron de construcción y aprendizaje. La 
+                            <span class="tooltip" tabindex="0">
+                                falta de infraestructura deportiva
+                                <span class="tooltip__content" role="tooltip">
+                                    Las clases prácticas se realizaban en plazas públicas y clubes 
+                                    que gentilmente cedían sus instalaciones.
+                                </span>
+                            </span>
+                            no detuvo el entusiasmo de docentes y estudiantes, quienes improvisaban espacios 
+                            de práctica y compartían materiales deportivos. Esta etapa fundacional marcó el 
+                            espíritu colaborativo y resiliente que caracteriza al IES hasta hoy.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card mb-lg">
+                    <div class="card__content">
+                        <h3 class="card__title" id="consolidacion">Consolidación y Crecimiento (1996-2005)</h3>
+                        <p class="card__text">
+                            La década de consolidación trajo consigo logros significativos. En 1996, el IES 
+                            obtuvo su <a href="#reconocimiento">reconocimiento oficial definitivo</a> del 
+                            Ministerio de Educación de la Provincia del Chaco, lo que permitió que los títulos 
+                            emitidos tuvieran validez nacional. Ese mismo año se inauguró el 
+                            <span class="tooltip" tabindex="0">
+                                primer gimnasio propio
+                                <span class="tooltip__content" role="tooltip">
+                                    El gimnasio se construyó con aportes de la comunidad, eventos benéficos 
+                                    y subsidios provinciales, demostrando el apoyo popular al proyecto.
+                                </span>
+                            </span>, 
+                            un hito que transformó la calidad de la formación práctica.
+                        </p>
+                        <p class="card__text">
+                            Durante este período, la matrícula creció exponencialmente, alcanzando los 200 estudiantes 
+                            en el año 2000. Se crearon las primeras 
+                            <a href="mapa.html#extensiones">extensiones áulicas</a> en Resistencia y Corrientes, 
+                            democratizando el acceso a la educación superior. Los egresados comenzaron a destacarse 
+                            en escuelas, clubes y proyectos comunitarios, construyendo una reputación de excelencia 
+                            que perdura hasta hoy. En 2003, se incorporó el 
+                            <span class="tooltip" tabindex="0">
+                                laboratorio de anatomía
+                                <span class="tooltip__content" role="tooltip">
+                                    Equipado con modelos anatómicos, esqueletos y material didáctico 
+                                    de última generación para la época.
+                                </span>
+                            </span>, 
+                            fortaleciendo la formación científica del profesorado.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card mb-lg">
+                    <div class="card__content">
+                        <h3 class="card__title" id="modernizacion">Modernización e Innovación (2006-2015)</h3>
+                        <p class="card__text">
+                            La segunda década del siglo XXI marcó la era de la modernización tecnológica y pedagógica. 
+                            En 2008, se inauguró la <a href="mapa.html#instalaciones">pileta olímpica climatizada</a>, 
+                            una de las pocas en instituciones educativas del interior del país. Este avance permitió 
+                            incorporar natación y deportes acuáticos con estándares profesionales. Paralelamente, 
+                            se digitalizaron los procesos administrativos y se creó la 
+                            <span class="tooltip" tabindex="0">
+                                biblioteca digital
+                                <span class="tooltip__content" role="tooltip">
+                                    Con más de 5.000 recursos digitales incluyendo libros, revistas 
+                                    científicas y videos didácticos.
+                                </span>
+                            </span>, 
+                            facilitando el acceso a recursos académicos actualizados.
+                        </p>
+                        <p class="card__text">
+                            El plan de estudios fue reformado en 2010 para incorporar <a href="#innovacion">nuevas tendencias</a> 
+                            como educación física inclusiva, actividad física terapéutica y uso de tecnologías en el deporte. 
+                            Se firmaron convenios con universidades nacionales e internacionales para intercambios académicos 
+                            y capacitaciones. Los estudiantes comenzaron a participar en congresos, presentar investigaciones 
+                            y competir en torneos deportivos interinstitucionales, posicionando al IES como referente regional.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <div class="card__content">
+                        <h3 class="card__title" id="actualidad">El IES Hoy (2016-2025)</h3>
+                        <p class="card__text">
+                            Hoy, el IES Santa Rosa es una <strong>institución consolidada y reconocida</strong> que forma 
+                            anualmente a más de 400 estudiantes en su sede central y extensiones. Con un plantel de 45 docentes 
+                            especializados, instalaciones de primer nivel y convenios con más de 60 instituciones educativas 
+                            y deportivas para prácticas profesionales, el instituto se proyecta hacia el futuro manteniendo 
+                            su esencia: formar <em>docentes comprometidos con la transformación social</em> a través del 
+                            movimiento, el deporte y la salud.
+                        </p>
+                        <p class="card__text">
+                            Los desafíos actuales incluyen la incorporación de 
+                            <span class="tooltip" tabindex="0">
+                                educación híbrida
+                                <span class="tooltip__content" role="tooltip">
+                                    Combinando clases presenciales con recursos digitales y plataformas 
+                                    de aprendizaje virtual.
+                                </span>
+                            </span>, 
+                            la ampliación de la oferta de posgrados y especializaciones, y el fortalecimiento de la 
+                            <a href="#investigacion">investigación científica</a> en ciencias del movimiento. Con más de 
+                            <strong>3.000 egresados</strong> trabajando en todo el país, el IES Santa Rosa continúa escribiendo 
+                            su historia con el mismo entusiasmo y compromiso que lo caracterizó desde sus orígenes.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Línea de Tiempo Interactiva -->
+        <section class="section section--alt" id="linea-tiempo">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">📅 Línea de Tiempo</h2>
+                    <p class="section__subtitle">Hitos fundamentales de nuestra trayectoria</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">1990</div>
+                            <div class="timeline__title">Fundación del IES Santa Rosa</div>
+                            <p class="timeline__description">
+                                35 estudiantes pioneros inician sus estudios en aulas prestadas. Nace el sueño 
+                                de formar docentes en Educación Física en la región.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">1994</div>
+                            <div class="timeline__title">Primera Promoción de Egresados</div>
+                            <p class="timeline__description">
+                                28 flamantes profesores reciben sus títulos. Muchos de ellos aún trabajan 
+                                en la región y forman parte de nuestra red de egresados.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">1996</div>
+                            <div class="timeline__title">Reconocimiento Oficial e Infraestructura Propia</div>
+                            <p class="timeline__description">
+                                El Ministerio de Educación otorga reconocimiento definitivo. Se inaugura 
+                                el primer gimnasio propio con apoyo de la comunidad.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">2000</div>
+                            <div class="timeline__title">Expansión Regional</div>
+                            <p class="timeline__description">
+                                Apertura de extensiones áulicas en Resistencia y Corrientes. 
+                                La matrícula alcanza los 200 estudiantes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">2003</div>
+                            <div class="timeline__title">Laboratorio de Anatomía</div>
+                            <p class="timeline__description">
+                                Se incorpora equipamiento científico de última generación para 
+                                fortalecer la formación en ciencias biológicas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">2008</div>
+                            <div class="timeline__title">Pileta Olímpica Climatizada</div>
+                            <p class="timeline__description">
+                                Inauguración de la pileta olímpica, permitiendo formación profesional 
+                                en natación y deportes acuáticos.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">2010</div>
+                            <div class="timeline__title">Reforma del Plan de Estudios</div>
+                            <p class="timeline__description">
+                                Actualización curricular incorporando educación inclusiva, actividad 
+                                física terapéutica y nuevas tecnologías.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">2015</div>
+                            <div class="timeline__title">Convenios Internacionales</div>
+                            <p class="timeline__description">
+                                Firma de acuerdos con universidades de Brasil, Chile y España para 
+                                intercambios académicos y capacitaciones.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">2020</div>
+                            <div class="timeline__title">Digitalización y Educación Híbrida</div>
+                            <p class="timeline__description">
+                                Adaptación exitosa a la educación virtual durante la pandemia. 
+                                Implementación de plataformas digitales permanentes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__year">2025</div>
+                            <div class="timeline__title">35 Años de Trayectoria</div>
+                            <p class="timeline__description">
+                                Más de 3.000 egresados, 400 estudiantes activos y reconocimiento 
+                                como institución de excelencia en formación docente deportiva.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Misión, Visión y Valores -->
+        <section class="section" id="mision-vision">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">🎯 Nuestra Identidad</h2>
+                </div>
+                
+                <div class="accordion mb-lg">
+                    <div class="accordion__item">
+                        <button class="accordion__header" aria-expanded="false" aria-controls="mision">
+                            <span>🎯 Misión</span>
+                            <span class="accordion__icon" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="accordion__content" id="mision">
+                            <div class="accordion__body">
+                                <p>
+                                    Formar profesores de Educación Física con sólida formación científica, 
+                                    pedagógica y ética, capaces de promover la actividad física, el deporte 
+                                    y la salud como herramientas de transformación social, atendiendo las 
+                                    necesidades educativas de la región y el país con compromiso, innovación 
+                                    y excelencia académica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion__item">
+                        <button class="accordion__header" aria-expanded="false" aria-controls="vision">
+                            <span>👁️ Visión</span>
+                            <span class="accordion__icon" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="accordion__content" id="vision">
+                            <div class="accordion__body">
+                                <p>
+                                    Ser la institución de referencia en formación docente en Educación Física 
+                                    en el nordeste argentino, reconocida por su calidad académica, compromiso 
+                                    social, innovación pedagógica y por graduar profesionales que lideren 
+                                    procesos de cambio hacia una sociedad más activa, saludable e inclusiva.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion__item">
+                        <button class="accordion__header" aria-expanded="false" aria-controls="valores">
+                            <span>💎 Valores</span>
+                            <span class="accordion__icon" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="accordion__content" id="valores">
+                            <div class="accordion__body">
+                                <ul style="list-style-position: inside; color: var(--texto-claro);">
+                                    <li><strong>Excelencia académica:</strong> Compromiso con la calidad en todos los procesos formativos</li>
+                                    <li><strong>Inclusión:</strong> Educación física para todos, sin discriminación</li>
+                                    <li><strong>Ética profesional:</strong> Integridad, responsabilidad y honestidad</li>
+                                    <li><strong>Innovación:</strong> Actualización permanente y apertura a nuevas metodologías</li>
+                                    <li><strong>Trabajo en equipo:</strong> Colaboración y construcción colectiva</li>
+                                    <li><strong>Compromiso social:</strong> Formación de agentes de cambio comunitario</li>
+                                    <li><strong>Respeto:</strong> Por la diversidad, las diferencias y el medio ambiente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTAs -->
+        <section class="section section--alt">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">¿Querés ser parte de nuestra historia?</h2>
+                    <p class="section__subtitle">Descubrí cómo sumarte al IES Santa Rosa</p>
+                </div>
+                
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">📖 Conocé la Carrera</h3>
+                            <p class="card__text">
+                                Explorá el plan de estudios, las materias, la salida laboral y los testimonios 
+                                de estudiantes y egresados.
+                            </p>
+                            <a href="carrera.html" class="btn btn--primary card__link">
+                                Ver Profesorado
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">📊 Ver Presentación</h3>
+                            <p class="card__text">
+                                Navegá por nuestra presentación interactiva con toda la información 
+                                institucional y académica.
+                            </p>
+                            <a href="presentacion.html" class="btn btn--primary card__link">
+                                Ir a Presentación
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">📞 Contactanos</h3>
+                            <p class="card__text">
+                                ¿Tenés dudas sobre la institución o el proceso de inscripción? 
+                                Estamos para ayudarte.
+                            </p>
+                            <a href="contacto.html" class="btn btn--primary card__link">
+                                Contactar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>IES Santa Rosa</h3>
+                    <p>Instituto de Educación Superior especializado en la formación de docentes en Educación Física.</p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Contacto</h3>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><span>📞</span> <a href="tel:+543624XXXXXX">+54 362 4-XXXXXX</a></li>
+                        <li class="footer__contact-item"><span>✉️</span> <a href="mailto:info@iessantarosa.edu.ar">info@iessantarosa.edu.ar</a></li>
+                        <li class="footer__contact-item"><span>📍</span> La Leonesa, Chaco</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Enlaces</h3>
+                    <ul class="footer__links-list">
+                        <li><a href="carrera.html">Carrera</a></li>
+                        <li><a href="mapa.html">Ubicación</a></li>
+                        <li><a href="creditos.html">Créditos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Seguinos</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/iessantarosa" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/iessantarosa" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 IES Santa Rosa - <a href="creditos.html">Créditos</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <button class="back-to-top" aria-label="Volver arriba">↑</button>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

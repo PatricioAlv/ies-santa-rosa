@@ -1,0 +1,7 @@
+# robots.txt para IES Santa Rosa
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.iessantarosa.edu.ar/sitemap.xml

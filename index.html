@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IES Santa Rosa - Profesorado de Educación Superior en Educación Física. Formando Docentes del Movimiento y la Salud en La Leonesa, Chaco.">
+    <meta name="keywords" content="profesorado, educación física, IES Santa Rosa, La Leonesa, Chaco, formación docente">
+    <meta name="author" content="IES Santa Rosa">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.iessantarosa.edu.ar/">
+    <meta property="og:title" content="IES Santa Rosa - Profesorado en Educación Física">
+    <meta property="og:description" content="Formando Docentes del Movimiento y la Salud en La Leonesa, Chaco">
+    <meta property="og:image" content="assets/img/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.iessantarosa.edu.ar/">
+    <meta name="twitter:title" content="IES Santa Rosa - Profesorado en Educación Física">
+    <meta name="twitter:description" content="Formando Docentes del Movimiento y la Salud en La Leonesa, Chaco">
+    <meta name="twitter:image" content="assets/img/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    
+    <title>IES Santa Rosa - Profesorado de Educación Superior en Educación Física</title>
+    
+    <!-- CSS Crítico Inline -->
+    <style>
+        /* Critical CSS - Above the fold */
+        :root{--color-primario:#B8A398;--color-secundario:#F5F1EE;--acento:#D4C4B0;--texto-oscuro:#8B7E74;--blanco:#FFFEF9}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;color:var(--texto-oscuro);background-color:var(--blanco)}
+        .hero{background:linear-gradient(135deg,var(--color-primario) 0%,var(--color-secundario) 100%);color:var(--texto-oscuro);padding:3rem 1rem;text-align:center;min-height:80vh;display:flex;align-items:center}
+    </style>
+    
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Instituto de Educación Superior Santa Rosa",
+        "alternateName": "IES Santa Rosa",
+        "url": "https://www.iessantarosa.edu.ar",
+        "logo": "https://www.iessantarosa.edu.ar/assets/img/logo.png",
+        "description": "Instituto de Educación Superior especializado en la formación de docentes en Educación Física",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Principal 123",
+            "addressLocality": "La Leonesa",
+            "addressRegion": "Chaco",
+            "postalCode": "3650",
+            "addressCountry": "AR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -27.0397,
+            "longitude": -58.7031
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+54-362-XXXXXXX",
+            "contactType": "Admissions",
+            "areaServed": "AR",
+            "availableLanguage": "Spanish"
+        },
+        "sameAs": [
+            "https://www.facebook.com/iessantarosa",
+            "https://www.instagram.com/iessantarosa"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header con navegación fija -->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <a href="index.html" class="header__logo" aria-label="IES Santa Rosa - Inicio">
+                <!-- TODO: Reemplazar con logo real -->
+                <img src="assets/img/logo.png" alt="Logo IES Santa Rosa" class="header__logo-img" onerror="this.style.display='none'">
+                <span>IES Santa Rosa</span>
+            </a>
+            
+            <!-- Toggle para menú móvil -->
+            <button class="header__toggle" 
+                    aria-label="Abrir menú de navegación" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navegación desktop -->
+            <nav class="header__nav" aria-label="Navegación principal">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="pages/carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="pages/institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="pages/mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="pages/test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="pages/contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Navegación móvil -->
+            <nav class="header__nav header__nav--mobile" id="mobile-nav" aria-label="Navegación móvil">
+                <ul class="header__nav-list" role="list">
+                    <li><a href="index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="pages/carrera.html" class="header__nav-link">Carrera</a></li>
+                    <li><a href="pages/institucional.html" class="header__nav-link">Institucional</a></li>
+                    <li><a href="pages/mapa.html" class="header__nav-link">Ubicación</a></li>
+                    <li><a href="pages/test.html" class="header__nav-link">Test</a></li>
+                    <li><a href="pages/contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <h1 id="hero-title" class="hero__title">Instituto de Educación Superior Santa Rosa</h1>
+                <p class="hero__subtitle">Formando Docentes del Movimiento y la Salud</p>
+                <p class="hero__text">
+                    Descubrí tu vocación en el Profesorado de Educación Superior en Educación Física. 
+                    Formate con excelencia académica y compromiso social en La Leonesa, Chaco.
+                </p>
+                <div class="hero__cta">
+                    <a href="pages/presentacion.html" class="btn btn--secondary btn--large">
+                        ▶ Iniciar Recorrido
+                    </a>
+                    <a href="pages/carrera.html" class="btn btn--outline btn--large">
+                        Conocer la Carrera
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Bienvenida / Blog Marco -->
+        <section class="section" id="bienvenida" aria-labelledby="bienvenida-title">
+            <div class="container">
+                <div class="section__header">
+                    <h2 id="bienvenida-title" class="section__title">Bienvenidos al IES Santa Rosa</h2>
+                    <p class="section__subtitle">
+                        Tu camino hacia una carrera que transforma vidas a través del deporte, 
+                        la salud y la educación física.
+                    </p>
+                </div>
+                
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">🎯 Una Vocación que Inspira</h3>
+                            <p class="card__text">
+                                Ser profesor de Educación Física es mucho más que enseñar deportes. 
+                                Es formar ciudadanos saludables, promover la inclusión y desarrollar 
+                                valores a través del movimiento. En el IES Santa Rosa te preparamos 
+                                para ser protagonista de este cambio social.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">📚 Excelencia Académica</h3>
+                            <p class="card__text">
+                                Nuestra carrera combina teoría y práctica con docentes especializados, 
+                                laboratorios equipados y convenios con instituciones deportivas. 
+                                Formación integral en anatomía, fisiología, didáctica, psicología del 
+                                deporte y mucho más.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">🏆 Nuestra Historia</h3>
+                            <p class="card__text">
+                                Desde hace más de 30 años, el IES Santa Rosa es referente en la formación 
+                                de docentes en Educación Física en la región. Miles de egresados trabajan 
+                                en escuelas, clubes y centros de salud de toda Argentina.
+                            </p>
+                            <a href="pages/institucional.html" class="btn btn--primary card__link">
+                                Ver Historia Completa
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="text-center mt-xl">
+                    <a href="pages/presentacion.html" class="btn btn--secondary btn--large">
+                        📊 Ver Presentación Interactiva
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Explorá -->
+        <section class="section section--alt" id="explora" aria-labelledby="explora-title">
+            <div class="container">
+                <div class="section__header">
+                    <h2 id="explora-title" class="section__title">Explorá Nuestro IES</h2>
+                    <p class="section__subtitle">
+                        Navegá por las diferentes secciones para conocer todo sobre nuestra institución
+                    </p>
+                </div>
+                
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">🗺️ Ubicación</h3>
+                            <p class="card__text">
+                                Conocé nuestra sede en La Leonesa, Chaco, y las extensiones áulicas 
+                                en la región. Mapa interactivo con todas las facilidades.
+                            </p>
+                            <a href="pages/mapa.html" class="btn btn--primary card__link">
+                                Ver Mapa
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">📖 La Carrera</h3>
+                            <p class="card__text">
+                                Plan de estudios, materias por cuatrimestre, salida laboral y recursos 
+                                multimedia. Todo lo que necesitás saber sobre el profesorado.
+                            </p>
+                            <a href="pages/carrera.html" class="btn btn--primary card__link">
+                                Ver Carrera
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">✅ Test de Compatibilidad</h3>
+                            <p class="card__text">
+                                ¿Esta carrera es para vos? Respondé nuestro test vocacional y descubrí 
+                                tu afinidad con la Educación Física.
+                            </p>
+                            <a href="pages/test.html" class="btn btn--primary card__link">
+                                Hacer Test
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">🏛️ Institucional</h3>
+                            <p class="card__text">
+                                Nuestra historia, misión, visión y valores. Un recorrido por tres décadas 
+                                formando profesionales del movimiento.
+                            </p>
+                            <a href="pages/institucional.html" class="btn btn--primary card__link">
+                                Conocer Más
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">📞 Contacto</h3>
+                            <p class="card__text">
+                                Comunicate con nosotros por teléfono, email o redes sociales. 
+                                Estamos para ayudarte en tu decisión.
+                            </p>
+                            <a href="pages/contacto.html" class="btn btn--primary card__link">
+                                Contactar
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">👥 Créditos</h3>
+                            <p class="card__text">
+                                Equipo de estudiantes responsables de este proyecto. 
+                                Trabajo colaborativo en Comunicación Digital.
+                            </p>
+                            <a href="pages/creditos.html" class="btn btn--primary card__link">
+                                Ver Equipo
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Secundarios -->
+        <section class="section" id="cta-secundarios" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="section__header">
+                    <h2 id="cta-title" class="section__title">¿Listo para dar el primer paso?</h2>
+                    <p class="section__subtitle">
+                        Explorá estos recursos para conocer más sobre tu futuro profesional
+                    </p>
+                </div>
+                
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">📚 Ver Materias</h3>
+                            <p class="card__text">
+                                Conocé el plan de estudios completo, las materias por año y los contenidos 
+                                que vas a aprender durante tu formación.
+                            </p>
+                            <a href="pages/carrera.html#materias" class="btn btn--outline card__link">
+                                Explorar Plan
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">💼 Salida Laboral</h3>
+                            <p class="card__text">
+                                Descubrí las múltiples oportunidades profesionales: docencia en escuelas, 
+                                entrenamiento deportivo, recreación, salud y más.
+                            </p>
+                            <a href="pages/carrera.html#salida-laboral" class="btn btn--outline card__link">
+                                Ver Oportunidades
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">🎓 Historias de Estudiantes</h3>
+                            <p class="card__text">
+                                Escuchá testimonios de estudiantes y egresados que ya están transformando 
+                                vidas a través de la Educación Física.
+                            </p>
+                            <a href="pages/carrera.html#testimonios" class="btn btn--outline card__link">
+                                Ver Testimonios
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>IES Santa Rosa</h3>
+                    <p>
+                        Instituto de Educación Superior especializado en la formación de 
+                        docentes en Educación Física.
+                    </p>
+                    <p><strong>Formando Docentes del Movimiento y la Salud desde 1990</strong></p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Contacto</h3>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item">
+                            <span aria-label="Teléfono">📞</span>
+                            <a href="tel:+543624XXXXXX">+54 362 4-XXXXXX</a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span aria-label="Email">✉️</span>
+                            <a href="mailto:info@iessantarosa.edu.ar">info@iessantarosa.edu.ar</a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span aria-label="Ubicación">📍</span>
+                            La Leonesa, Chaco, Argentina
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="pages/carrera.html">Carrera</a></li>
+                        <li class="footer__links-item"><a href="pages/institucional.html">Institucional</a></li>
+                        <li class="footer__links-item"><a href="pages/mapa.html">Ubicación</a></li>
+                        <li class="footer__links-item"><a href="pages/test.html">Test Vocacional</a></li>
+                        <li class="footer__links-item"><a href="pages/contacto.html">Contacto</a></li>
+                        <li class="footer__links-item"><a href="pages/creditos.html">Créditos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Seguinos</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/iessantarosa" 
+                           class="footer__social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Seguinos en Facebook">
+                            <span>f</span>
+                        </a>
+                        <a href="https://www.instagram.com/iessantarosa" 
+                           class="footer__social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Seguinos en Instagram">
+                            <span>📷</span>
+                        </a>
+                        <a href="https://www.youtube.com/@iessantarosa" 
+                           class="footer__social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Seguinos en YouTube">
+                            <span>▶</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 IES Santa Rosa. Todos los derechos reservados.</p>
+                <p>Sitio desarrollado como proyecto educativo - <a href="pages/creditos.html">Ver créditos</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" aria-label="Volver arriba">↑</button>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
