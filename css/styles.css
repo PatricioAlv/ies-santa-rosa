@@ -5,16 +5,16 @@
 
 /* Variables CSS */
 :root {
-    --color-primario: #B8A398;
-    --color-secundario: #F5F1EE;
-    --acento: #D4C4B0;
-    --texto-oscuro: #8B7E74;
-    --texto-claro: #A6998E;
-    --blanco: #FFFEF9;
-    --gris-claro: #FAF8F5;
-    --gris-medio: #E8E4DF;
-    --error: #C9A19C;
-    --exito: #A8B89F;
+    --color-primario: #A8C5E0;
+    --color-secundario: #F0F7FC;
+    --acento: #B8D4EA;
+    --texto-oscuro: #5A7A8F;
+    --texto-claro: #8FA9BC;
+    --blanco: #FAFCFE;
+    --gris-claro: #F5F9FC;
+    --gris-medio: #E3EBF2;
+    --error: #D4A5A8;
+    --exito: #A8C9B8;
     
     /* Tipografía */
     --fuente-principal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -358,7 +358,7 @@ img {
 
 .btn--primary:hover,
 .btn--primary:focus {
-    background-color: #A89389;
+    background-color: #92B4D0;
     color: var(--blanco);
     transform: translateY(-2px);
     box-shadow: var(--sombra-md);
@@ -371,7 +371,7 @@ img {
 
 .btn--secondary:hover,
 .btn--secondary:focus {
-    background-color: #C5B5A3;
+    background-color: #A3C1D9;
     color: var(--texto-oscuro);
     transform: translateY(-2px);
     box-shadow: var(--sombra-md);
@@ -637,7 +637,6 @@ img {
     overflow: hidden;
     box-shadow: var(--sombra-md);
     background-color: var(--gris-claro);
-}
 }
 
 /* Hero section */

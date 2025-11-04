@@ -2,7 +2,17 @@
 
 ## 📋 Descripción del Proyecto
 
-Sitio web institucional del **Instituto de Educación Superior Santa Rosa**, especializado en la formación del **Profesorado de Educación Superior en Educación Física** en La Leonesa, Chaco, Argentina.
+Sitio web institucional del **Instituto de Educación Superior Santa Rosa**, con sedes en **La Leonesa y Vedia, Chaco, Argentina**. 
+
+### 🎓 Oferta Académica:
+
+**Sede La Leonesa:**
+- Profesorado de Educación Superior en Educación Física
+- Profesorado en Ciencias de la Educación  
+- Tecnicatura Superior en Seguridad e Higiene
+
+**Sede Vedia:**
+- Profesorado en Tecnología
 
 Este proyecto fue desarrollado como Trabajo Final Integrador (TFI) de la materia Comunicación Digital, cumpliendo con todos los requisitos técnicos y de accesibilidad establecidos.
 
@@ -13,10 +23,10 @@ Este proyecto fue desarrollado como Trabajo Final Integrador (TFI) de la materia
 ### ✅ Diseño y UX
 - **Diseño responsive** con enfoque mobile-first
 - **Estilo limpio y profesional** con variables CSS
-- **Paleta de colores institucional:**
-  - Primario: `#1f4b7a` (azul institucional)
-  - Secundario: `#e3f2fd` (azul claro)
-  - Acento: `#ffb300` (amarillo/dorado)
+- **Paleta de colores institucional (celeste pastel):**
+  - Primario: `#A8C5E0` (celeste pastel)
+  - Secundario: `#F0F7FC` (celeste muy claro)
+  - Acento: `#B8D4EA` (celeste acento)
 - **Header fijo** con logo y navegación
 - **Footer** con datos de contacto y redes sociales
 
@@ -74,10 +84,11 @@ Este proyecto fue desarrollado como Trabajo Final Integrador (TFI) de la materia
 ## 📄 Páginas del Sitio
 
 ### 1. **index.html** (Portada)
-- Hero con nombre del IES y lema: "Formando Docentes del Movimiento y la Salud"
-- Botón "Iniciar" que navega a presentacion.html
-- Sección de bienvenida y contexto histórico
-- Bloque "Explorá" con tarjetas de navegación
+- Hero con nombre del IES y lema: "Formación de Excelencia en La Leonesa y Vedia"
+- Botón "Ver Presentación" que navega a presentacion.html
+- Sección de bienvenida destacando las 4 carreras
+- Bloque "Nuestras Carreras" con las 4 propuestas académicas
+- Bloque "Conocé Más Sobre el IES" con navegación institucional
 - CTAs secundarios: Ver materias, Salida laboral, Historias
 
 ### 2. **presentacion.html** (Presentación Interactiva)
@@ -87,15 +98,16 @@ Este proyecto fue desarrollado como Trabajo Final Integrador (TFI) de la materia
 - CTAs de navegación cruzada
 
 ### 3. **mapa.html** (Mapa Georreferenciado)
-- Embed de Google Maps con marcador en La Leonesa, Chaco
-- Lista de extensiones áulicas con pines
+- Embed de Google Maps con marcadores en La Leonesa y Vedia, Chaco
+- Lista de sedes y extensiones áulicas
 - Mini leyenda y accesos rápidos
-- Información de instalaciones
+- Información de instalaciones de ambas sedes
 
 ### 4. **carrera.html** (Oferta Académica)
-- Descripción de la carrera (80-120 palabras)
-- Plan de estudios por cuatrimestres
-- Salida laboral (bullet points)
+- **NOTA:** Esta página muestra principalmente el Profesorado en Educación Física (ejemplo detallado)
+- Descripción de las carreras disponibles
+- Plan de estudios por cuatrimestres (Ed. Física como ejemplo)
+- Salida laboral de cada carrera
 - Galería de imágenes (grid responsive)
 - Video YouTube (placeholder - testimonios 90-120s)
 - Audio con testimonios (90-120s)
@@ -248,11 +260,11 @@ El sitio implementa múltiples niveles de navegación:
 
 ## 🎓 Información Académica
 
-**Carrera:** Profesorado de Educación Superior en Educación Física  
-**Institución:** IES Santa Rosa  
+**Carrera:** Profesorado de Educación Superior en Educación Física (y otras carreras del IES)  
+**Institución:** IES Santa Rosa - La Leonesa y Vedia, Chaco  
 **Unidad Curricular:** Comunicación Digital  
 **Trabajo:** TFI EF_021325  
-**Modalidad:** Sitio web estático institucional  
+**Modalidad:** Sitio web estático institucional multidisciplinario  
 
 ---
 
@@ -267,9 +279,13 @@ Este sitio fue desarrollado de manera colaborativa por estudiantes del IES Santa
 ## 📞 Contacto
 
 **IES Santa Rosa**  
-📍 Av. Principal 123, La Leonesa, Chaco (3650)  
+📍 La Leonesa y Vedia, Chaco, Argentina  
 📞 +54 362 4-XXXXXX  
 ✉️ info@iessantarosa.edu.ar  
+
+**Sedes:**
+- **La Leonesa:** Profesorados (Ed. Física, Ciencias de la Educación) + Tecnicatura (Seguridad e Higiene)
+- **Vedia:** Profesorado en Tecnología
 
 ---
 
