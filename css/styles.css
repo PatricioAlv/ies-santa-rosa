@@ -5,16 +5,16 @@
 
 /* Variables CSS */
 :root {
-    --color-primario: #A8C5E0;
-    --color-secundario: #F0F7FC;
-    --acento: #B8D4EA;
-    --texto-oscuro: #5A7A8F;
-    --texto-claro: #8FA9BC;
-    --blanco: #FAFCFE;
-    --gris-claro: #F5F9FC;
-    --gris-medio: #E3EBF2;
-    --error: #D4A5A8;
-    --exito: #A8C9B8;
+    --color-primario: #2C5F7F;
+    --color-secundario: #E8F1F8;
+    --acento: #1E4A66;
+    --texto-oscuro: #2A3F4F;
+    --texto-claro: #546E7A;
+    --blanco: #FFFFFF;
+    --gris-claro: #F5F8FA;
+    --gris-medio: #D4E1E9;
+    --error: #C62828;
+    --exito: #2E7D32;
     
     /* Tipografía */
     --fuente-principal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
