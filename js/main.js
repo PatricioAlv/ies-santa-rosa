@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initTestSimulation();
     initSmoothScroll();
     highlightActiveNavItem();
+    initCareerTabs();
 });
 
 // ========================================
@@ -304,6 +305,63 @@ function initTestSimulation() {
         
         // Ocultar botón
         testCompleteBtn.style.display = 'none';
+    });
+}
+
+// ========================================
+// TABS DE CARRERAS (para carrera.html)
+// ========================================
+function initCareerTabs() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const planEstudios = document.querySelectorAll('.plan-estudios');
+    
+    if (tabButtons.length === 0) return;
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remover clase active de todos los botones
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+            
+            // Agregar clase active al botón clickeado
+            this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
+            
+            // Ocultar todos los contenidos de tabs
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Mostrar el contenido correspondiente
+            const activeContent = document.getElementById(targetTab);
+            if (activeContent) {
+                activeContent.classList.add('active');
+            }
+            
+            // Mostrar el plan de estudios correspondiente
+            planEstudios.forEach(plan => {
+                plan.classList.remove('active');
+                if (plan.getAttribute('data-carrera') === targetTab) {
+                    plan.classList.add('active');
+                }
+            });
+            
+            // Anunciar cambio a lectores de pantalla
+            announceToScreenReader('Carrera seleccionada: ' + this.textContent);
+        });
+        
+        // Soporte de teclado
+        button.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
     });
 }
 
